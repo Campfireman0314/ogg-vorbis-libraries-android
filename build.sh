@@ -23,7 +23,7 @@ function unpack-and-configure {
   rm -rf lib$what-$version
   
   if [ ! -f lib$what-$version.tar.gz ]; then
-    wget http://downloads.xiph.org/releases/$what/lib$what-$version.tar.gz
+    wget --secure-protocol=TLSv1_2 http://downloads.xiph.org/releases/$what/lib$what-$version.tar.gz
   fi
   
   tar xf lib$what-$version.tar.gz

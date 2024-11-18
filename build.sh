@@ -1,7 +1,9 @@
 #!/bin/bash
 
-ogg_ver=1.3.3
-vor_ver=1.3.6
+# Here specifies the versions of ogg and vorbis libraries. 
+# To use vorbis files and encoder features, use 
+ogg_ver=1.3.4
+vor_ver=1.3.7
 
 if [ "$1" == clean ]; then
   rm -rf obj
